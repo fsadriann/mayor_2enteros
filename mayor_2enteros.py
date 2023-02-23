@@ -12,13 +12,11 @@ x = int(input("Digite el valor de x: "))
 y = int(input("Digite el valor de y: "))
 #processing
 
-if x > y:
-    msj = " es mayor que "
-elif x < y:
-    msj = " es menor que "
+if x == y:
+    print ("los numeros son iguales ")
 else:
-    msj = " es igual a "
-
-#output
-
-print("El numero " + str(x) + msj + str(y))
+    if x > y:
+        mayor = x
+    else:
+        mayor = y
+    print("El mayor entre " + str(x) + " y " + str(y) + " es " + str(mayor))
